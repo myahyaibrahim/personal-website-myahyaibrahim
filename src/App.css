@@ -95,7 +95,7 @@
     --big-font-size: 2.75rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
-    --h3-font-size: 15rem;
+    --h3-font-size: 1rem;
     --normal-font-size: 0.938rem;
     --small-font-size: 0.813rem;
     --smaller-font-size: 0.75rem;
@@ -208,10 +208,30 @@ section__subtitle {
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
   }
+
+  .button {
+    padding: 1rem 1.75rem;
+  }
+
+  .button__icon {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 /* For medium screen devices */
 @media screen and (max-width: 768px){
+  body {
+    margin: 0 0 var(--header-height) 0;
+  }
+
+  .section {
+    padding: 2rem 0 4rem;
+  }
+
+  .section__subtitle {
+    margin-bottom: var(--mb-3);
+  }
 }
 
 @media screen and (max-width: 576px){
@@ -219,6 +239,10 @@ section__subtitle {
 
 /* For small screen devices */
 @media screen and (max-width: 350px){
+  :root {
+    --big-font-size: 2.25rem;
+  }
+  
   .container{
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
